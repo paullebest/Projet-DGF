@@ -1,0 +1,411 @@
+
+<!DOCTYPE html> <!-- Déclaration du type de document HTML -->
+<!-- Début du document HTML avec langue définie en français -->
+<html lang="fr">
+
+<!-- Début de l'en-tête du document -->
+<head>
+    <!-- Définition du jeu de caractères pour le document -->
+    <meta charset="utf-8">
+    <!-- Configuration de la mise en page responsive pour les appareils mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Description du contenu de la page pour les moteurs de recherche -->
+    <meta name="description" content="Création d'une page web pour un festival de jeux vidéos de 2024 en utilisant HTML, CSS et JavaScript.">
+    <!-- Auteur de la page -->
+    <meta name="author" content="Paul le bg, élève modèle de Mode 83">
+    <!-- Informations de droit d'auteur -->
+    <meta name="copyright" content="Paul le bg">
+    <!-- Propriété Open Graph pour le titre de la page, utilisé par les réseaux sociaux -->
+	<meta property="og:title" content="Festival du jeu vidéo 2024">
+    <!-- Propriété Open Graph pour la description de la page, utilisée par les réseaux sociaux -->
+    <meta property="og:description" content="Création d'une page web pour un festival de jeux vidéos de 2024 en utilisant HTML, CSS et JavaScript.">
+    <!-- Propriété Open Graph pour l'image de la page, utilisée par les réseaux sociaux -->
+    <meta property="og:image" content="URL de votre image">
+    <!-- Propriété Open Graph pour l'URL de la page, utilisée par les réseaux sociaux -->
+    <meta property="og:url" content="URL de votre page">
+    <!-- Propriété Open Graph pour le type de contenu, ici un site web -->
+    <meta property="og:type" content="website">
+    <!-- Propriété Twitter pour le type de carte à utiliser (grand résumé avec image) -->
+	<meta name="twitter:card" content="summary_large_image">
+    <!-- Propriété Twitter pour le site associé -->
+    <meta name="twitter:site" content="@username">
+    <!-- Propriété Twitter pour le titre de la carte -->
+    <meta name="twitter:title" content="Festival du jeu vidéo 2024">
+    <!-- Propriété Twitter pour la description de la carte -->
+    <meta name="twitter:description" content="Création d'une page web pour un festival de jeux vidéos de 2024 en utilisant HTML, CSS et JavaScript.">
+    <!-- Propriété Twitter pour l'image de la carte -->
+    <meta name="twitter:image" content="URL de votre image">
+    <!-- Définition de la couleur du thème du navigateur -->
+    <meta name="theme-color" content="#ffd700">
+    <!-- Directives pour les moteurs de recherche : indexer la page et suivre les liens -->
+    <meta name="robots" content="index, follow">
+	<!-- Directives pour Googlebot : indexer la page et suivre les liens -->
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Lien vers l'icône du site en format PNG (32x32) -->
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="32x32">
+    <!-- Lien vers l'icône du site en format PNG (16x16) -->
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="16x16">
+    <!-- Lien vers l'icône du site en format ICO -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <!-- Lien vers la feuille de style CSS externe -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <title> Dgf de wish </title>
+
+    
+
+</head>
+
+<!-- Début du corps du document -->
+<body>
+
+    <!-- Début de l'en-tête de la page -->
+    <header>
+
+        <!-- Début du conteneur pour l'en-tête -->
+        <div class="header-container">
+            <!-- Image du logo du festival -->
+            <img src="images/logo_DGF.png" alt="Logo du Festival" class="logo">
+            <!-- Titre principal de la page avec lien vers l'accueil -->
+            <h1><a href="index.html">DGF 2024</a></h1>
+            <!-- Bouton pour la navigation mobile -->
+            <button class="menu-toggle" aria-label="Navigation sur appareils mobiles">☰</button>
+        </div>
+        <!-- Fin du conteneur pour l'en-tête -->
+
+        <!-- Fin du conteneur pour l'en-tête -->
+
+        <!-- Début de la navigation principale -->
+        <nav>
+            <!-- Liste des liens de navigation -->
+            <ul>
+                <!-- Lien vers la section programme -->
+                <li><a href="#programme">Programme</a></li>
+                <!-- Lien vers la section intervenants -->
+                <li><a href="#intervenants">Intervenants</a></li>
+                <!-- Lien vers la section inscription, avec une classe pour le styliser -->
+                <li><a href="#lots-a-gagner">Lots</a></li>
+                <li><a href="#ou-nous-trouver">Lieu</a></li>
+                <li class="inscription"><a href="#inscription">Inscription</a></li>
+            </ul>
+        </nav>
+        <!-- Fin de la navigation principale -->
+
+    </header>
+    <!-- Fin de l'en-tête de la page -->
+
+
+
+    <!-- Section vidéo de présentation -->
+    <section id="video">
+        <!-- Intégration d'une vidéo avec contrôles, lecture automatique, boucle et son coupé -->
+        <video controls autoplay loop muted>
+            <!-- Source de la vidéo en format MP4 -->
+            <source src="videos/video1.mp4" type="video/mp4">
+            <!-- Sous-titres pour la vidéo -->
+            <track src="videos/sous-titres1.vtt" kind="subtitles" srclang="fr" label="Français">
+            <!-- Message affiché si le navigateur ne supporte pas la vidéo -->
+            Ton navigateur est trop guez pour supporter la vidéo.
+        </video>
+
+        <a href="https://draguignan-gaming.gg/" target="_blank" class="video-button" title="Ciquez ici pour en savoir plus sur cet événement">
+           En savoir plus
+        </a>
+
+        <!-- Lien pour télécharger la description textuelle de la vidéo -->
+        <p>Téléchargez la <a href="descriptions/description1.txt" download title="Cliquez ici pour télécharger la description de cette vidéo">Description textuelle</a> de cette vidéo.</p>
+    </section>
+
+    <!-- Section du programme de l'événement -->
+    <section id="programme">
+        
+        <!-- Titre de la section programme -->
+        <h2>
+            Programme journalier de l'événement qui se déroulera les 9 et 10 Novembre de l'an de grâce 2024
+        </h2>
+        
+        <!-- Tableau du programme avec les horaires, activités et emplacements -->
+        <table>
+            <!-- En-tête du tableau -->
+            <thead>
+                <tr>
+                    <!-- Colonne pour les horaires -->
+                    <th>Heure</th>
+                    <!-- Colonne pour les activités -->
+                    <th>Activité</th>
+                    <!-- Colonne pour les emplacements -->
+                    <th>Emplacement</th>
+                </tr>
+            </thead>
+            <!-- Corps du tableau -->
+            <tbody>
+                <!-- Ligne pour l'ouverture des portes -->
+                <tr>
+                    <td>09:00</td>
+                    <td>Ouverture des portes</td>
+                    <td>Entrée principale</td>
+                </tr>
+                <!-- Ligne pour la compétition Fortnite -->
+                <tr>
+                    <td>Deezer</td>
+                    <td>Compétition Fortnite y la babaji</td>
+                    <td>Salle A</td>
+                </tr>
+                <!-- Ligne pour la pause déjeuner -->
+                <tr>
+                    <td>12:00</td>
+                    <td>Pause déjeuner</td>
+                    <td>Cantine du lycée Jean Moulin</td>
+                </tr>
+                <!-- Ligne pour l'atelier de développement de jeux -->
+                <tr>
+                    <td>14:00</td>
+                    <td>Atelier de développement de jeux avec JC</td>
+                    <td>Salle B</td>
+                </tr>
+                <!-- Ligne pour le tournoi de League of Legends -->
+                <tr>
+                    <td>16:00</td>
+                    <td>Tournoi divers et variés</td>
+                    <td>Salle C</td>
+                </tr>
+                <!-- Ligne pour les jeux vidéos de clôture -->
+                <tr>
+                    <td>20:00</td>
+                    <td>Soirée disco</td>
+                    <td>Chez Boris</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    <!-- Fin de la section programme -->
+    </section>
+
+    <!-- Section des intervenants avec un carrousel d'images -->
+    <section id="intervenants">
+        <!-- Titre de la section intervenants -->
+        <h2>Informations sur les pnj, clique sur chacune des images pour en savoir plus</h2>
+        <!-- Conteneur du carrousel -->
+        <div class="carousel">
+            <!-- Conteneur des images du carrousel -->
+            <div class="carousel-image">
+            <div class="slides">
+                <!-- Slide 1 avec lien externe et détails -->
+                <div class="slide">
+                    <a href="https://www.youtube.com/channel/UCAW-NpUFkMyCNrvRSSGIvDQ" target="_blank" title="Y'a encore des gens qui le regardent ?">
+                        <!-- Image de l'intervenant 1 -->
+                        <img src="images/nija.jpg" alt="Intervenant 1">
+                    </a>
+                    <!-- Légende pour l'intervenant 1 -->
+                    <div class="caption">Le ninja de Konoha - Détails</div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <a href="https://www.youtube.com/channel/UCCFqUJYKT97UerMmb6DM0bw" target="_blank" title="KC > M8">
+                        <!-- Image de l'intervenant 2 -->
+                        <img src="images/gotaga.jpg" alt="Intervenant 2">
+                    </a>
+                    <!-- Légende pour l'intervenante 2 -->
+                    <div class="caption">THE FRENCH MONSTER OHOHOH GOTAGA - Détails</div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <a href="https://www.youtube.com/user/joueurdugrenier" target="_blank" title="et pas joueur de la cave">
+                        <!-- Image de l'intervenant 3 -->
+                        <img src="images/jdg.jpg" alt="Intervenant 3">
+                    </a>
+                    <!-- Légende pour l'intervenante 3 -->
+                    <div class="caption">Joueur du grenier - Détails</div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <a href="https://www.twitch.tv/skyyart" target="_blank" title="en gros Luden c'est un mythique qui donne de la péné magique et donc en en gros ça donne 6 de péné magique flat donc à 2 items complets.. donc il a 10 de péné flat donc il monte à 16, il a les bottes ça fait 18. Donc 16+18 ça fait 34 si jdis pas de conneries donc 34 + il avait shadow flame donc il a 44 et il a 44 et après du coup le void staff faut faire 44 divisé par 0.6 en gros il fait des dégats purs à un mec jusqu'à 73 d'rm j'avais dit 70 dans le cast à peu près et en gros bah les mecs ils ont pas 70 d'rm parce que globalement y'a eu un patch, en gros y'a le patch qui fait 0.8 d'rm sur les carrys et en gros de base sur lol y'avait pas ça et en gros la botlane va jamais prendre de la rm en lane en tout cas pas beaucoup donc c'est pas ouf en vrai j'pense que son item est nul donc en vrai j'pense soit il enlève shadow flame soit le void staff mais j'pense qu'il vaut mieux enlever shadow flame">
+                        <!-- Image de l'intervenant 4 -->
+                        <img src="images/skyyart.jpg" alt="Intervenant 4">
+                    </a>
+                    <!-- Légende pour l'intervenant 4 -->
+                    <div class="caption">Skyyart - Détails</div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="slide">
+                    <a href="https://www.youtube.com/user/doigby" target="_blank" title="Doigbite">
+                        <!-- Image de l'intervenant 5 -->
+                        <img src="images/doigby.jpg" alt="Intervenant 5">
+                    </a>
+                    <!-- Légende pour l'intervenante 5 -->
+                    <div class="caption">Doigby - Détails</div>
+                </div>
+                <!-- Slide 6 -->
+                <div class="slide">
+                    <a href="https://www.twitch.tv/aminematue" target="_blank" title="Amine m'a pas tué sinon je serais mort lol">
+                        <!-- Image de l'intervenant 6 -->
+                        <img src="images/aminematue.jpg" alt="Intervenant 6">
+                    </a>
+                    <!-- Légende pour l'intervenant 6 -->
+                    <div class="caption">Amine m'a tué - Détails</div>
+                </div>
+            </div>
+        </div>
+            <!-- Bouton précédent du carrousel -->
+            <button class="prev">⟨</button>
+            <!-- Bouton suivant du carrousel -->
+            <button class="next">⟩</button>
+        </div>
+    </section>
+    <!-- Section des intervenants avec un carrousel d'images -->
+
+
+
+
+<!-- Section de la galerie d'images des lots à gagner -->
+<section id="lots-a-gagner">
+    <h2>Lots à gagner pendant le festival 2024 le 9 et 10 novembre</h2>
+    <div class="gallery">
+        <!-- Image 1 -->
+        <div class="gallery-item">
+            <img src="images/lot1.jpg" alt="Lot 1" class="gallery-image" onclick="openModal(this)" width="300" height="200">
+            <div class="caption">Une Nintendo Switch trois modes d'utilisation</div>
+        </div>
+        <!-- Image 2 -->
+        <div class="gallery-item">
+            <img src="images/Citroen C3 aircross.webp" alt="Lot 2" class="gallery-image" onclick="openModal(this)" width="300" height="200">
+            <div class="caption">Une Citroën C3 aircross - Seulement 10.000km au compteur</div>
+        </div>
+        <!-- Image 3 -->
+        <div class="gallery-item">
+            <img src="images/taboulet.jpg" alt="Lot 3" class="gallery-image" onclick="openModal(this)" width="300" height="200">
+            <div class="caption">Un taboulet gourmand - Format familial</div>
+        </div>
+        <!-- Image 4 -->
+        <div class="gallery-item">
+            <img src="images/a85f7c3d6f_50019863_bebe-grand-mere-photosjasondunncom-cc-nc-nd-25.jpg" alt="Lot 4" class="gallery-image" onclick="openModal(this)" width="300" height="200">
+            <div class="caption">Ma belle mère - 56 ans et toutes ses dents</div>
+        </div>
+        <!-- Image 5 -->
+        <div class="gallery-item">
+            <img src="images/lot5.jpg" alt="Lot 5" class="gallery-image" onclick="openModal(this)" width="300" height="200">
+            <div class="caption">Une Sony PlayStation 2</div>
+        </div>
+        <!-- Image 6 -->
+        <div class="gallery-item">
+            <img src="images/porte clé.webp" alt="Lot 6" class="gallery-image" onclick="openModal(this)" width="300" height="200">
+            <div class="caption">Un porte-clé très stylé</div>
+        </div>
+    </div>
+
+    <!-- Modal pour afficher les images en grand format -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+</section>
+
+
+
+    <!-- Section d'inscription des participants -->
+    <section id="inscription">
+        <!-- Titre de la section inscription -->
+        <h2>Inscription des participants</h2>
+        <!-- Formulaire d'inscription avec champs requis -->
+        <form>
+            <!-- Label pour le champ prénom -->
+            <label for="prenom" style="color: #000; font-weight: bold; cursor: pointer;">
+                Prénom : <span style="color: red;">*</span>
+            </label>
+            <!-- Champ de saisie pour le prénom -->
+            <input type="text" placeholder="Entrez votre prénom et votre nom ici..." required id="prenom">
+            <!-- Label pour le champ adresse mail -->
+            <label for="email" style="color: #000; font-weight: bold; cursor: pointer;">
+                Adresse mail : <span style="color: red;">*</span>
+            </label>
+            <!-- Champ de saisie pour l'adresse mail -->
+            <input type="email" placeholder="Entrez votre adersse mail ici..." required id="email">
+            <!-- Label pour le champ codes banquaires -->
+            <label for="carte banquaire" style="color: #000; font-weight: bold; cursor: pointer;">
+                Informations banquaires : <span style="color: red;">*</span>
+            </label>
+            <!-- Champ de saisie pour l'adresse mail -->
+            <input type="text" placeholder="Vous en faites pas c'est gratuit ^^" required id="carte banquaire">
+            <!-- Bouton de soumission du formulaire -->
+            <button type="submit" aria-label="bouton de soumission">Inscrivez-vous</button>
+        </form>
+    </section>
+
+    <!-- Section vidéo de l'événement de l'année précédente -->
+    <section id="last-year-video">
+        <!-- Titre de la section vidéo de l'année précédente -->
+        <h2>Revivez le dernier festival qui a eu lieu en 2023</h2>
+        <!-- Intégration d'une vidéo avec contrôles, lecture automatique, boucle et son coupé -->
+        <video controls autoplay loop muted>
+            <!-- Source de la vidéo en format MP4 -->
+            <source src="videos/video2.mp4" type="video/mp4">
+            <!-- Sous-titres pour la vidéo -->
+            <track src="videos/sous-titres2.vtt" kind="subtitles" srclang="fr" label="Français">
+            <!-- Message affiché si le navigateur ne supporte pas la vidéo -->
+            Ton navigateur est trop guez pour supporter la vidéo.
+        </video>
+        <!-- Lien pour télécharger la description textuelle de la vidéo -->
+        <p>Téléchargez la <a href="descriptions/description2.txt" download title="Cliquez ici pour télécharger la description de cette vidéo">Description textuelle</a> de cette vidéo.</p>
+    </section>
+
+
+    
+<!-- Début de la section 'Où nous trouver ?' -->
+<section id="ou-nous-trouver">
+    <h2>Où nous trouver ?</h2>
+    <!-- Début du conteneur pour la disposition des div l'un à côté de l'autre -->
+    <div class="container">
+        <!-- Carte Google à gauche -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.9047255971172!2d6.4576884756926365!3d43.52517946070221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ceac7a8af8465d%3A0x14df09a82f6f34e9!2sBd%20Saint-Exup%C3%A9ry%2C%2083300%20Draguignan!5e0!3m2!1sfr!2sfr!4v1718797026499!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Situation géographique du festival"></iframe>
+        </div>
+        <!-- Coordonnées du lieu à droite -->
+        <div class="contact-info">
+            <h2>Nos coordonnées</h2>
+            <p>Adresse : Boulevard St Exupéry 83300 Draguignan</p>
+            <p>Téléphone : <a href="tel:0494569875">36 30 36 30</a></p>
+            <p><a href="mailto:contact@festivaljeuvideo2024.com">contact@festivaljeuvideo2024.com</a></p>
+        </div>
+    </div>
+    <!-- Fin du conteneur pour la disposition des div l'un à côté de l'autre -->
+</section>
+<!-- Fin de la section 'Où nous trouver ?' -->
+
+
+    
+    <!-- Pied de page avec le copyright et icônes des réseaux sociaux -->
+    <footer>
+
+        <div class="footer-container">
+            <div class="footer-text">
+               <p>© 2024 Festival du jeu vidéo 2024</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Faceboock"></a>
+                <a href="#"><img src="images/twitter.png" alt="TwitterX"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Pied de page avec le copyright et icônes des réseaux sociaux -->
+
+    <!-- Bouton pour remonter en haut -->
+
+     <button id="scrollToTopBtn" title="Cliquez ici pour revenir en haut">↑</button>
+    <!-- Bouton pour remonter en haut -->
+
+<!-- Inclusion du fichier JavaScript externe -->
+<script src="js/script.js"></script>
+
+<!-- Fin du corps du document -->
+</body>
+
+<!-- Fin du document HTML -->
+</html>
